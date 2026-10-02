@@ -1,4 +1,4 @@
-# Venus — Smart Trading Bot
+# Venus - Smart Trading Bot
 
 A Telegram bot, written in Python, that improves trading by executing
 **predefined strategies** instead of leaving decisions to the moment. A user
@@ -10,8 +10,8 @@ picks a strategy and hands over a position; the bot manages it from there.
 
 Manual trading fails in predictable ways: people take profits too early, hold
 losses too long, and change their mind halfway through. A strategy fixes those
-decisions in advance — where to take profit, in what proportions, and when to
-cut a loss — and the bot's only job is to follow it without improvising.
+decisions in advance - where to take profit, in what proportions, and when to
+cut a loss - and the bot's only job is to follow it without improvising.
 
 Three presets, plus a fully custom option defined by five numbers:
 
@@ -23,7 +23,7 @@ Three presets, plus a fully custom option defined by five numbers:
 
 **Protection only ever tightens.** The stop starts below the entry price,
 follows the highest price seen at the strategy's trailing distance, and
-ratchets upward each time a target is hit — after the first one it sits above
+ratchets upward each time a target is hit - after the first one it sits above
 entry, so the position can no longer end at a loss. It never moves back down.
 Once the last target is reached, the remainder rides the trend under the same
 trailing stop.
